@@ -3,5 +3,5 @@ Express
 React.js
 Node.js
 Redux
-MaterialUi
+Material UI
 Tailwind
