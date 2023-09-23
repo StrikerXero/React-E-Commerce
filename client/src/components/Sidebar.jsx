@@ -96,7 +96,7 @@ const navItems = [
 const Sidebar = ({
   drawerWidth,
   isSidebarOpen,
-  setSidebarOpen,
+  setIsSidebarOpen,
   isNonMobile,
 }) => {
   const { pathname } = useLocation();
@@ -113,7 +113,7 @@ const Sidebar = ({
       {isSidebarOpen && (
         <Drawer
           open={isSidebarOpen}
-          onClose={() => setSidebarOpen(false)}
+          onClose={() => setIsSidebarOpen(false)}
           variant="persistent"
           anchor="left"
           sx={{
@@ -136,7 +136,7 @@ const Sidebar = ({
                   </Typography>
                 </Box>
                 {!isNonMobile && (
-                  <IconButton onClick={() => setSidebarOpen(!isSidebarOpen)}>
+                  <IconButton onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
                     <ChevronLeft />
                   </IconButton>
                 )}
